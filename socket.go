@@ -115,7 +115,7 @@ func (s *Socket) newConn(us *C.utp_socket) *Conn {
 	return c
 }
 
-const maxNumBuffers = 16
+const maxNumBuffers = 2
 
 func (s *Socket) packetReader() {
 	mc := mmsg.NewConn(s.pc)
